@@ -1,0 +1,17 @@
+{% extends "basepj.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Add a toy</h1>
+  <p>Add a new toy with the form below: </p>
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.item_name.label}}{{form.item_name()}}
+    {{form.id.label}}{{form.id()}}
+    {{form.submit()}}
+
+  </form>
+
+
+</div>
+
+{% endblock %}
