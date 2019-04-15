@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h3>We recommend these restaurants for you:</h3>
+  <br>
+  <br>
+  <div id="contentBox"; width:100%">
+
+   <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+      <div id="column1" style="float:left; margin:0; width:30%;">
+        <p>1. &nbsp;&nbsp; <font size="4"><b>{{session['r1name']}}</b></font></p>
+        <p>2. &nbsp;&nbsp; <font size="4"><b>{{session['r2name']}}</b></font></p>
+        <p>3. &nbsp;&nbsp; <font size="4"><b>{{session['r3name']}}</b></font></p>
+        <p>4. &nbsp;&nbsp; <font size="4"><b>{{session['r4name']}}</b></font></p>
+      </div>
+      <div id="column2" style="float:left; margin:0;width:15%;">
+        <p><font size="4">Cuisine: {{session['r1cuisine']}}</font></p>
+        <p><font size="4">Cuisine: {{session['r2cuisine']}}</font></p>
+        <p><font size="4">Cuisine: {{session['r3cuisine']}}</font></p>
+        <p><font size="4">Cuisine: {{session['r4cuisine']}}</font></p>
+      </div>
+      <div id="column2" style="float:left; margin:0;width:15%;">
+        <p><font size="4">Stars: {{session['r1stars']}}</font></p>
+        <p><font size="4">Stars: {{session['r2stars']}}</font></p>
+        <p><font size="4">Stars: {{session['r3stars']}}</font></p>
+        <p><font size="4">Stars: {{session['r4stars']}}</font></p>
+      </div>
+      <div id="column3" style="float:left; margin:0;width:40%">
+        <p><font size="4">Address: {{session['r1address']}}</font></p>
+        <p><font size="4">Address: {{session['r2address']}}</font></p>
+        <p><font size="4">Address: {{session['r3address']}}</font></p>
+        <p><font size="4">Address: {{session['r4address']}}</font></p>
+        <br>
+        <br>
+      </div>
+    </div>
+    <p><font size="2">Recommended restaurants are simulated and not real London-based restaurants</p>
+</div>
+
+{% endblock %}

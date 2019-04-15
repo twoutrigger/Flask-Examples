@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h3>We recommend these restaurants for you:</h3>
+  <br>
+
+  <p>1. &nbsp;&nbsp; <font size="5">{{session['r1name']}}</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuisine: {{session['r1cuisine']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stars: {{session['r1stars']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: {{session['r1address']}}</p>
+  <p>2. &nbsp;&nbsp; <font size="5">{{session['r2name']}}</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuisine: {{session['r2cuisine']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stars: {{session['r2stars']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: {{session['r2address']}}</p>
+  <p>3. &nbsp;&nbsp; <font size="5">{{session['r3name']}}</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuisine: {{session['r3cuisine']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stars: {{session['r3stars']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: {{session['r3address']}}</p>
+  <p>4. &nbsp;&nbsp; <font size="5">{{session['r4name']}}</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuisine: {{session['r4cuisine']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stars: {{session['r4stars']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: {{session['r4address']}}</p>
+  <br>
+  <p><font size="2">Recommended restaurants are simulated and not real London-based restaurants</p>
+</div>
+
+{% endblock %}
