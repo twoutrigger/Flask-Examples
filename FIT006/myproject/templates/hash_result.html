@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+p {
+     word-wrap:break-word;
+ }
+ </style>
+<div class="jumbotron"; word-wrap: break-word;>
+
+  <h3>These are the hash details: </h3>
+  <br>
+
+  <p><font size="5">
+    You entered the password <b>{{session['password_input']}}</b> with encryption type <b>{{session['hash_type']}}</b>.
+    <br><br>
+    The produced hash's level of security: <font color={{session['secure_color']}}><b>{{session['secure_text']}}</b></font>
+    <br><br>
+    The produced hash size: {{session['hash_digest_size']}}
+    <br><br>
+    The produced hash in bytes:
+    <br>
+    <font size="3">{{session['hash_in_bytes']}}</font>
+    <br><br>
+    The produced hash in hex:
+    <br>
+    <font size="3">{{session['hash_in_hex']}}</font>
+    <br>
+
+  </font></p>
+
+</div>
+
+{% endblock %}

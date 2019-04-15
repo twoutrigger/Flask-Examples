@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Restaurant Finder</h1>
+  <p>Welcome to our restaurant app! Please select your options below and hit submit.</p>
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.area.label}}<p>{{form.area}}</p>
+    {{form.cuisine.label}}<p>{{form.cuisine}}</p>
+    {{form.diningtime.label}}<p>{{form.diningtime}}</p>
+    <br>
+    {{form.submit()}}
+  </form>
+  <br>
+  <p><font size="2">Created for FIT Coursework 2 by Liam, Xhuljeta, Christine and Egzona</p>
+</div>
+
+{% endblock %}

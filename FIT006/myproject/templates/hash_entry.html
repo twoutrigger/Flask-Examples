@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Hash Generator</h1>
+  <p>Please input a password and hash type below and hit submit.</p>
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.password_input.label}}<p>{{form.password_input}}</p>
+    {{form.hash_type.label}}<p>{{form.hash_type}}</p>
+
+    <br>
+    {{form.submit()}}
+  </form>
+  <br>
+  <p><font size="2">Created for FIT Coursework 2 by Liam, Xhuljeta, Christine and Egzona</p>
+</div>
+
+{% endblock %}
